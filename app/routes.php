@@ -11,7 +11,21 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/test', function()
 {
-	return View::make('hello');
+	return View::make('home');
 });
+
+/*
+|--------------------------------------------------------------------------
+| Main pages routes
+|--------------------------------------------------------------------------
+|
+|
+*/
+Route::get('/',array( 'uses'=>'PageController@showHome' ));
+Route::get('/product',array( 'uses'=>'PageController@showProduct' ));
+Route::get('/service',array( 'uses'=>'PageController@showService' ));
+Route::get('/plan',array( 'uses'=>'PageController@showPlan' ));
+Route::get('/order',array( 'uses'=>'PageController@showOrder' ));
+Route::get('/reservation',array( 'uses'=>'PageController@showReservation' ));

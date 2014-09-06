@@ -11,102 +11,77 @@
 
 namespace Symfony\Component\Security\Core\Tests\Validator\Constraints;
 
-use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
-use Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface;
-use Symfony\Component\Security\Core\SecurityContextInterface;
 use Symfony\Component\Security\Core\Validator\Constraints\UserPassword;
 use Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator;
-use Symfony\Component\Validator\Tests\Constraints\AbstractConstraintValidatorTest;
-use Symfony\Component\Validator\Validation;
 
-/**
- * @author Bernhard Schussek <bschussek@gmail.com>
- */
-class UserPasswordValidatorTest extends AbstractConstraintValidatorTest
+class UserPasswordValidatorTest extends \PHPUnit_Framework_TestCase
 {
-    const PASSWORD = 's3Cr3t';
+    const PASSWORD_VALID   = true;
+    const PASSWORD_INVALID = false;
 
-    const SALT = '^S4lt$';
-
-    /**
-     * @var SecurityContextInterface
-     */
-    protected $securityContext;
-
-    /**
-     * @var PasswordEncoderInterface
-     */
-    protected $encoder;
-
-    /**
-     * @var EncoderFactoryInterface
-     */
-    protected $encoderFactory;
-
-    protected function getApiVersion()
-    {
-        return Validation::API_VERSION_2_5;
-    }
-
-    protected function createValidator()
-    {
-        return new UserPasswordValidator($this->securityContext, $this->encoderFactory);
-    }
+    protected $context;
 
     protected function setUp()
     {
-        $user = $this->createUser();
-        $this->securityContext = $this->createSecurityContext($user);
-        $this->encoder = $this->createPasswordEncoder();
-        $this->encoderFactory = $this->createEncoderFactory($this->encoder);
+        $this->context = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+    }
 
-        parent::setUp();
+    protected function tearDown()
+    {
+        $this->context = null;
     }
 
     public function testPasswordIsValid()
     {
-        $constraint = new UserPassword(array(
-            'message' => 'myMessage',
-        ));
+        $user = $this->createUser();
+        $securityContext = $this->createSecurityContext($user);
 
-        $this->encoder->expects($this->once())
-            ->method('isPasswordValid')
-            ->with(static::PASSWORD, 'secret', static::SALT)
-            ->will($this->returnValue(true));
+        $encoder = $this->createPasswordEncoder(static::PASSWORD_VALID);
+        $encoderFactory = $this->createEncoderFactory($encoder);
 
-        $this->validator->validate('secret', $constraint);
+        $validator = new UserPasswordValidator($securityContext, $encoderFactory);
+        $validator->initialize($this->context);
 
-        $this->assertNoViolation();
+        $this
+            ->context
+            ->expects($this->never())
+            ->method('addViolation')
+        ;
+
+        $validator->validate('secret', new UserPassword());
     }
 
     public function testPasswordIsNotValid()
     {
-        $constraint = new UserPassword(array(
-            'message' => 'myMessage',
-        ));
+        $user = $this->createUser();
+        $securityContext = $this->createSecurityContext($user);
 
-        $this->encoder->expects($this->once())
-            ->method('isPasswordValid')
-            ->with(static::PASSWORD, 'secret', static::SALT)
-            ->will($this->returnValue(false));
+        $encoder = $this->createPasswordEncoder(static::PASSWORD_INVALID);
+        $encoderFactory = $this->createEncoderFactory($encoder);
 
-        $this->validator->validate('secret', $constraint);
+        $validator = new UserPasswordValidator($securityContext, $encoderFactory);
+        $validator->initialize($this->context);
 
-        $this->assertViolation('myMessage');
+        $this
+            ->context
+            ->expects($this->once())
+            ->method('addViolation')
+        ;
+
+        $validator->validate('secret', new UserPassword());
     }
 
-    /**
-     * @expectedException \Symfony\Component\Validator\Exception\ConstraintDefinitionException
-     */
     public function testUserIsNotValid()
     {
+        $this->setExpectedException('Symfony\Component\Validator\Exception\ConstraintDefinitionException');
+
         $user = $this->getMock('Foo\Bar\User');
+        $encoderFactory = $this->getMock('Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface');
+        $securityContext = $this->createSecurityContext($user);
 
-        $this->securityContext = $this->createSecurityContext($user);
-        $this->validator = $this->createValidator();
-        $this->validator->initialize($this->context);
-
-        $this->validator->validate('secret', new UserPassword());
+        $validator = new UserPasswordValidator($securityContext, $encoderFactory);
+        $validator->initialize($this->context);
+        $validator->validate('secret', new UserPassword());
     }
 
     protected function createUser()
@@ -114,15 +89,15 @@ class UserPasswordValidatorTest extends AbstractConstraintValidatorTest
         $mock = $this->getMock('Symfony\Component\Security\Core\User\UserInterface');
 
         $mock
-            ->expects($this->any())
+            ->expects($this->once())
             ->method('getPassword')
-            ->will($this->returnValue(static::PASSWORD))
+            ->will($this->returnValue('s3Cr3t'))
         ;
 
         $mock
-            ->expects($this->any())
+            ->expects($this->once())
             ->method('getSalt')
-            ->will($this->returnValue(static::SALT))
+            ->will($this->returnValue('^S4lt$'))
         ;
 
         return $mock;
@@ -130,7 +105,15 @@ class UserPasswordValidatorTest extends AbstractConstraintValidatorTest
 
     protected function createPasswordEncoder($isPasswordValid = true)
     {
-        return $this->getMock('Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface');
+        $mock = $this->getMock('Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface');
+
+        $mock
+            ->expects($this->once())
+            ->method('isPasswordValid')
+            ->will($this->returnValue($isPasswordValid))
+        ;
+
+        return $mock;
     }
 
     protected function createEncoderFactory($encoder = null)
@@ -138,7 +121,7 @@ class UserPasswordValidatorTest extends AbstractConstraintValidatorTest
         $mock = $this->getMock('Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface');
 
         $mock
-            ->expects($this->any())
+            ->expects($this->once())
             ->method('getEncoder')
             ->will($this->returnValue($encoder))
         ;
@@ -152,7 +135,7 @@ class UserPasswordValidatorTest extends AbstractConstraintValidatorTest
 
         $mock = $this->getMock('Symfony\Component\Security\Core\SecurityContextInterface');
         $mock
-            ->expects($this->any())
+            ->expects($this->once())
             ->method('getToken')
             ->will($this->returnValue($token))
         ;
@@ -164,7 +147,7 @@ class UserPasswordValidatorTest extends AbstractConstraintValidatorTest
     {
         $mock = $this->getMock('Symfony\Component\Security\Core\Authentication\Token\TokenInterface');
         $mock
-            ->expects($this->any())
+            ->expects($this->once())
             ->method('getUser')
             ->will($this->returnValue($user))
         ;

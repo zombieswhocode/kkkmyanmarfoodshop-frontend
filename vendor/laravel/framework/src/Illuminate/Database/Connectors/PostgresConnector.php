@@ -16,6 +16,7 @@ class PostgresConnector extends Connector implements ConnectorInterface {
 			PDO::ATTR_STRINGIFY_FETCHES => false,
 	);
 
+
 	/**
 	 * Establish a database connection.
 	 *

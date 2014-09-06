@@ -31,6 +31,7 @@ a:hover {
 /**********************/
 .white {
   color: #ffffff !important;
+  text-shadow: 5px 5px 5px black;
 }
 .grey {
   color: #eeeeee !important;

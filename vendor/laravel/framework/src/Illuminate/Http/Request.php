@@ -22,7 +22,7 @@ class Request extends SymfonyRequest {
 	/**
 	 * Return the Request instance.
 	 *
-	 * @return $this
+	 * @return \Illuminate\Http\Request
 	 */
 	public function instance()
 	{
@@ -177,7 +177,7 @@ class Request extends SymfonyRequest {
 	}
 
 	/**
-	 * Determine if the request contains a non-empty value for an input item.
+	 * Determine if the request contains a non-emtpy value for an input item.
 	 *
 	 * @param  string|array  $key
 	 * @return bool
@@ -214,7 +214,7 @@ class Request extends SymfonyRequest {
 	 */
 	public function all()
 	{
-		return array_replace_recursive($this->input(), $this->files->all());
+		return array_merge_recursive($this->input(), $this->files->all());
 	}
 
 	/**
@@ -241,16 +241,7 @@ class Request extends SymfonyRequest {
 	{
 		$keys = is_array($keys) ? $keys : func_get_args();
 
-		$results = [];
-
-		$input = $this->all();
-
-		foreach ($keys as $key)
-		{
-			array_set($results, $key, array_get($input, $key, null));
-		}
-
-		return $results;
+		return array_only($this->input(), $keys) + array_fill_keys($keys, null);
 	}
 
 	/**
@@ -263,9 +254,9 @@ class Request extends SymfonyRequest {
 	{
 		$keys = is_array($keys) ? $keys : func_get_args();
 
-		$results = $this->all();
+		$results = $this->input();
 
-		array_forget($results, $keys);
+		foreach ($keys as $key) array_forget($results, $key);
 
 		return $results;
 	}
@@ -514,7 +505,6 @@ class Request extends SymfonyRequest {
 	/**
 	 * Get the data format expected in the response.
 	 *
-	 * @param  string  $default
 	 * @return string
 	 */
 	public function format($default = 'html')
@@ -537,7 +527,7 @@ class Request extends SymfonyRequest {
 	{
 		if ($request instanceof static) return $request;
 
-		return (new static)->duplicate(
+		return with(new static)->duplicate(
 
 			$request->query->all(), $request->request->all(), $request->attributes->all(),
 

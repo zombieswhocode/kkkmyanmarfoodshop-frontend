@@ -7,9 +7,25 @@ class PageController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function showHome()
 	{
-		//
+		return View::make('pages.home');
+	}
+	public function showProduct()
+	{
+		return View::make('pages.product');
+	}
+	public function showService()
+	{
+		return View::make('pages.service');
+	}
+	public function showOrder()
+	{
+		return View::make('pages.order');
+	}
+	public function showReservation()
+	{
+		return View::make('pages.reservation');
 	}
 
 

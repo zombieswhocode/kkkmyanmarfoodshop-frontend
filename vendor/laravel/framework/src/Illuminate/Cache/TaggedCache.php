@@ -1,8 +1,6 @@
 <?php namespace Illuminate\Cache;
 
 use Closure;
-use DateTime;
-use Carbon\Carbon;
 
 class TaggedCache implements StoreInterface {
 
@@ -63,13 +61,11 @@ class TaggedCache implements StoreInterface {
 	 *
 	 * @param  string  $key
 	 * @param  mixed   $value
-	 * @param  \DateTime|int  $minutes
+	 * @param  int     $minutes
 	 * @return void
 	 */
 	public function put($key, $value, $minutes)
 	{
-		$minutes = $this->getMinutes($minutes);
-
 		return $this->store->put($this->taggedItemKey($key), $value, $minutes);
 	}
 
@@ -151,9 +147,9 @@ class TaggedCache implements StoreInterface {
 	/**
 	 * Get an item from the cache, or store the default value.
 	 *
-	 * @param  string  $key
-	 * @param  \DateTime|int  $minutes
-	 * @param  \Closure  $callback
+	 * @param  string   $key
+	 * @param  int      $minutes
+	 * @param  Closure  $callback
 	 * @return mixed
 	 */
 	public function remember($key, $minutes, Closure $callback)
@@ -171,8 +167,8 @@ class TaggedCache implements StoreInterface {
 	/**
 	 * Get an item from the cache, or store the default value forever.
 	 *
-	 * @param  string    $key
-	 * @param  \Closure  $callback
+	 * @param  string   $key
+	 * @param  Closure  $callback
 	 * @return mixed
 	 */
 	public function sear($key, Closure $callback)
@@ -183,8 +179,8 @@ class TaggedCache implements StoreInterface {
 	/**
 	 * Get an item from the cache, or store the default value forever.
 	 *
-	 * @param  string    $key
-	 * @param  \Closure  $callback
+	 * @param  string   $key
+	 * @param  Closure  $callback
 	 * @return mixed
 	 */
 	public function rememberForever($key, Closure $callback)
@@ -218,22 +214,6 @@ class TaggedCache implements StoreInterface {
 	public function getPrefix()
 	{
 		return $this->store->getPrefix();
-	}
-
-	/**
-	 * Calculate the number of minutes with the given duration.
-	 *
-	 * @param  \DateTime|int  $duration
-	 * @return int
-	 */
-	protected function getMinutes($duration)
-	{
-		if ($duration instanceof DateTime)
-		{
-			return max(0, Carbon::instance($duration)->diffInMinutes());
-		}
-
-		return is_string($duration) ? intval($duration) : $duration;
 	}
 
 }

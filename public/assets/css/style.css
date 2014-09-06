@@ -245,7 +245,7 @@ table { background: #fff; }
 	left: 5px;
 	display: inline-block; 
 	margin: 0;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	color: #565656;
@@ -274,10 +274,10 @@ table { background: #fff; }
 .header .navbar-default .navbar-nav{ margin-top: 20px; }
 
 .header .navbar-default .navbar-nav>li>a{
-	padding-top: 0px;
+	padding-top: -1px;
 	padding-bottom: 20px;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 700;
 	text-align: center
 }
@@ -1064,7 +1064,7 @@ div.ppt { display:none !important; }
  */
 
 .banner {
-	background: url('../img/banner.jpg') center center repeat-x; 
+	background: url('../../../assets/img/banner3.jpg') center center repeat-x; 
 	text-align: center;
 }
 
@@ -1956,7 +1956,7 @@ div.ppt { display:none !important; }
 		margin-top: 20px;
 	}
 	
-	.header .logo h1 { font-size: 35px; }
+	.header .logo h1 { font-size: 25px; }
 	.header .logo p { font-size: 13px; }
 	.header .navbar-default .navbar-nav { margin-top: 8px; }
 	.header .navbar-default .navbar-nav>li>a{

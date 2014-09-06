@@ -93,6 +93,7 @@ class BelongsToMany extends Relation {
 	 * @param  string  $column
 	 * @param  string  $operator
 	 * @param  mixed   $value
+	 * @param  string  $boolean
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
 	public function orWherePivot($column, $operator = null, $value = null)
@@ -288,7 +289,6 @@ class BelongsToMany extends Relation {
 	/**
 	 * Set the select clause for the relation query.
 	 *
-	 * @param  array  $columns
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
 	protected function getSelectColumns(array $columns = array('*'))
@@ -327,7 +327,7 @@ class BelongsToMany extends Relation {
 	 * Set the join clause for the relation query.
 	 *
 	 * @param  \Illuminate\Database\Eloquent\Builder|null
-	 * @return $this
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
 	protected function setJoin($query = null)
 	{
@@ -348,7 +348,7 @@ class BelongsToMany extends Relation {
 	/**
 	 * Set the where clause for the relation query.
 	 *
-	 * @return $this
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
 	protected function setWhere()
 	{
@@ -654,10 +654,12 @@ class BelongsToMany extends Relation {
 			// Now we'll try to update an existing pivot record with the attributes that were
 			// given to the method. If the model is actually updated we will add it to the
 			// list of updated pivot records so we return them back out to the consumer.
-			elseif (count($attributes) > 0 &&
-				$this->updateExistingPivot($id, $attributes, $touch))
+			elseif (count($attributes) > 0)
 			{
-				$changes['updated'][] = (int) $id;
+				if ($this->updateExistingPivot($id, $attributes, $touch))
+				{
+					$changes['updated'][] = (int) $id;
+				}
 			}
 		}
 		return $changes;
@@ -671,7 +673,7 @@ class BelongsToMany extends Relation {
 	 * @param  bool   $touch
 	 * @return void
 	 */
-	public function updateExistingPivot($id, array $attributes, $touch = true)
+	public function updateExistingPivot($id, array $attributes, $touch)
 	{
 		if (in_array($this->updatedAt(), $this->pivotColumns))
 		{
@@ -708,7 +710,6 @@ class BelongsToMany extends Relation {
 	 * Create an array of records to insert into the pivot table.
 	 *
 	 * @param  array  $ids
-	 * @param  array  $attributes
 	 * @return array
 	 */
 	protected function createAttachRecords($ids, array $attributes)
@@ -942,7 +943,7 @@ class BelongsToMany extends Relation {
 	 * Set the columns on the pivot table to retrieve.
 	 *
 	 * @param  array  $columns
-	 * @return $this
+	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
 	public function withPivot($columns)
 	{
@@ -956,8 +957,6 @@ class BelongsToMany extends Relation {
 	/**
 	 * Specify that the pivot table has creation and update timestamps.
 	 *
-	 * @param  mixed  $createdAt
-	 * @param  mixed  $updatedAt
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
 	public function withTimestamps($createdAt = null, $updatedAt = null)

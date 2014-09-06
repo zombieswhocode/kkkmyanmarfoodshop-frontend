@@ -14,7 +14,7 @@ namespace Symfony\Component\DomCrawler;
 use Symfony\Component\CssSelector\CssSelector;
 
 /**
- * Crawler eases navigation of a list of \DOMElement objects.
+ * Crawler eases navigation of a list of \DOMNode objects.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *
@@ -637,7 +637,9 @@ class Crawler extends \SplObjectStorage
     public function filter($selector)
     {
         if (!class_exists('Symfony\\Component\\CssSelector\\CssSelector')) {
+            // @codeCoverageIgnoreStart
             throw new \RuntimeException('Unable to filter with a CSS selector as the Symfony CssSelector is not installed (you can use filterXPath instead).');
+            // @codeCoverageIgnoreEnd
         }
 
         // The CssSelector already prefixes the selector with descendant-or-self::
@@ -889,7 +891,7 @@ class Crawler extends \SplObjectStorage
                 $expression = $nonMatchingExpression;
             } elseif (0 === strpos($expression, 'descendant::')) {
                 $expression = 'descendant-or-self::' . substr($expression, strlen('descendant::'));
-            } elseif (!preg_match('/^(ancestor|ancestor-or-self|attribute|child|descendant-or-self|following|following-sibling|parent|preceding|preceding-sibling|self)::/', $expression)) {
+            } elseif (0 !== strpos($expression, 'descendant-or-self::')) {
                 $expression = 'self::' .$expression;
             }
             $expressions[] = $parenthesis.$expression;
@@ -909,7 +911,9 @@ class Crawler extends \SplObjectStorage
             if ($i == $position) {
                 return $node;
             }
+        // @codeCoverageIgnoreStart
         }
+        // @codeCoverageIgnoreEnd
     }
 
     /**

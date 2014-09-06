@@ -59,7 +59,6 @@ class MigrationCreator {
 	 * Get the migration stub file.
 	 *
 	 * @param  string  $table
-	 * @param  bool    $create
 	 * @return string
 	 */
 	protected function getStub($table, $create)
@@ -119,7 +118,7 @@ class MigrationCreator {
 	/**
 	 * Register a post migration create hook.
 	 *
-	 * @param  \Closure  $callback
+	 * @param  Closure  $callback
 	 * @return void
 	 */
 	public function afterCreate(Closure $callback)
