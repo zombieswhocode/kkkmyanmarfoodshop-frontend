@@ -11,13 +11,9 @@ class PageController extends \BaseController {
 	{
 		return View::make('pages.home');
 	}
-	public function showProduct()
+	public function showMonthly()
 	{
-		return View::make('pages.product');
-	}
-	public function showService()
-	{
-		return View::make('pages.service');
+		return View::make('pages.monthly');
 	}
 	public function showOrder()
 	{

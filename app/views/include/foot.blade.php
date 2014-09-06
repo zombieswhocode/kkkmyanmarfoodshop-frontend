@@ -10,10 +10,18 @@
 								<div class="logo">
 									<img class="img-responsive" src="/assets/img/logo.png" alt="" />
 									<!-- Heading -->
-									<h1>CakeFactory</h1>
+									<h1>ခိုင္ခိုင္ေက်ာ္</h1>
 								</div>
+								<hr>
 								<!-- Paragraph -->
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+								<b>
+								 ၿမန္မာ ထမင္း ဟင္း ႏွင္႔ ပတ္သတ္၍ မ်က္ႏွာ မပ်က္ေစရန္ တာဝန္ယူပါရေစ။
+
+							      <br />
+							      ေစ်းႏႈန္း အရသာ ဝန္ေဆာင္မႈ အရည္အေသြး <br />
+							      သန္႔ရွင္းမႈ တို႔ကို အဓိက ထားၿပီး ေန႔စဥ္ ေကာင္းေအာင္ ႀကိဳးစားထားေသာျမန္မာထမင္းဆိုင္ 
+							      <br/>
+								</b>
 								<hr />
 								
 							</div> <!--/ Footer widget end -->
@@ -22,7 +30,18 @@
 							<!-- Footer widget -->
 							<div class="footer-widget">
 								<!-- Heading -->
-								<h4>Famous Dishes</h4>
+								<h4>ဆိုင္ခြဲမွား</h4>
+								<div class="contact-details">
+									<p>ဆိုင္ (၁) - ပါရမီ ဆိုင္ခြဲ - အမွတ္(၄၂/က) ပါရမီ လမ္း ႏွင္႔ ေဝဇယႏၱာ လမ္းေထာင္႔ ၊ ပါရမီခံုးေက်ာ္ တံတားၾကီး အနီး။ <br /> <br /> ဆိုင္ (၂) - ျပည္လမ္း ဆိုင္ခြဲ - အမွတ္(၆၇၁-A)၊<br /> ၅ မိုင္ခြဲ၊ ကေမာၻဇဘဏ္ေဘး၊ သုခကမာၻ ေဆးရံု အဝင္လမ္း ၊ မာလာေဆာင္ မွတ္တိုင္၊ ျပည္လမ္း။ <br /> ဖုန္း- <strong><span style="color: #ff6600;">ဝ၉-၅၁၅ ၉ဝ၈၄ ၊ ၀၉ ၇၃၀၀ ၀၇၀၇ ၊</p>
+								</div>
+								
+							</div> <!--/ Footer widget end -->
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h4>အေရာင္းရဆံုးအစားအေသာက္မ်ား</h4>
 								<!-- Images -->
 								<a href="#"><img class="dish img-responsive" src="/assets/img/dish/dish1.jpg" alt="" /></a>
 								<a href="#"><img class="dish img-responsive" src="/assets/img/dish/dish2.jpg" alt="" /></a>
@@ -35,31 +54,11 @@
 								<a href="#"><img class="dish img-responsive" src="/assets/img/dish/dish9.jpg" alt="" /></a>
 							</div> <!--/ Footer widget end -->
 						</div>
-						<div class="clearfix visible-sm"></div>
 						<div class="col-md-3 col-sm-6">
 							<!-- Footer widget -->
 							<div class="footer-widget">
 								<!-- Heading -->
-								<h4>Join Us Today</h4>
-								<!-- Paragraph -->
-								<p>There is no one who loves pain itself, who seeks after it and wants to have it.</p>
-								<!-- Subscribe form -->
-								<form role="form">
-									<div class="form-group">
-										<input class="form-control" type="text" placeholder="Your name" />
-									</div>
-									<div class="form-group">
-										<input class="form-control" type="email" placeholder="Your email" />
-									</div>
-									<button class="btn btn-danger" type="button">Subscribe</button>
-								</form>
-							</div> <!--/ Footer widget end -->
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<!-- Footer widget -->
-							<div class="footer-widget">
-								<!-- Heading -->
-								<h4>Contact Us</h4>
+								<h4>ဆက္သြယရန္လိပ္စာ</h4>
 								<div class="contact-details">
 									<!-- Address / Icon -->
 									<i class="fa fa-map-marker br-red"></i> <span>#768, 5th floor, N S Building,<br />Csm Block, Park Road,<br /> Bangalore - 234567</span>

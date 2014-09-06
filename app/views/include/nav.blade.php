@@ -10,6 +10,7 @@
 							<a href="index.html">
 								<!-- Logo area -->
 								<div class="logo">
+									<img class="img-responsive" src="/assets/img/logo.png" alt="" />
 									<!-- Heading -->
 									<h1>Khaing Khaing Kyaw</h1>
 									<!-- Paragraph -->
@@ -36,7 +37,7 @@
 										<ul class="nav navbar-nav">
 											<li><a href="/">ပင္မစာမ်က္ႏွာ</a></li>
 
-											<li><a href="#">ခ်ိဳင့္ဆြဲမွာယူရန္</a></li>
+											<li><a href="/monthly">ခ်ိဳင့္ဆြဲမွာယူရန္</a></li>
 
 											<li><a href="/order">ေအာ္ဒါမွာယူရန္</a></li>
 

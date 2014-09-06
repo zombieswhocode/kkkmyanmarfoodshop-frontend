@@ -24,8 +24,6 @@ Route::get('/test', function()
 |
 */
 Route::get('/',array( 'uses'=>'PageController@showHome' ));
-Route::get('/product',array( 'uses'=>'PageController@showProduct' ));
-Route::get('/service',array( 'uses'=>'PageController@showService' ));
-Route::get('/plan',array( 'uses'=>'PageController@showPlan' ));
+Route::get('/monthly',array( 'uses'=>'PageController@showMonthly' ));
 Route::get('/order',array( 'uses'=>'PageController@showOrder' ));
 Route::get('/reservation',array( 'uses'=>'PageController@showReservation' ));
