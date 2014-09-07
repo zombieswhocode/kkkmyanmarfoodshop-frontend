@@ -1,6 +1,55 @@
 @extends('layout.main')
 @section('content')
-
+	<!-- Shopping cart Modal -->
+		<div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">အခ်က္အလက္မ်ားျဖည့္သြင္းပါ</h4>
+					</div>
+					<div class="modal-body">
+						<!-- Booking form area -->
+								<div class="booking-form">
+									
+									<!-- Booking form -->
+									<form role="form">
+										<!-- Form label -->
+										<label>နံမည္</label>
+										<div class="form-group">
+											<!-- Form input -->
+											<input class="form-control" type="text" placeholder="နံမည္ျဖည့္သြင္းပါ" />
+										</div>
+										<!-- Form label -->
+										<label>အီးေမးလ္(Email)</label>
+										<div class="form-group">
+											<!-- Form input -->
+											<input class="form-control" type="email" placeholder="Email" />
+										</div>
+										<!-- Form label -->
+										<label>ဖုန္း</label>
+										<div class="form-group">
+											<!-- Form input -->
+											<input class="form-control" type="text" placeholder="ဖုန္းနံပါတ္ျဖည့္သြင္းပါ" />
+										</div>
+										
+										<!-- Form label -->
+										<label>လိပ္စာ</label>
+										<div class="form-group">
+											<!-- Form text area -->
+											<textarea class="form-control" rows="3" placeholder="လိပ္စာျဖည့္သြင္းါ"></textarea>
+										</div>
+										<!-- Form button -->
+										<button class="btn btn-danger btn-sm" type="submit">Confirm</button>&nbsp;
+										<button class="btn btn-default btn-sm" type="reset">Reset</button>
+									</form>
+								</div>
+					</div>
+					
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- Model End -->
 	<!-- Banner Start -->
 			
 			<div class="banner padd">
@@ -30,15 +79,68 @@
 								<!-- Heading -->
 								<h3>ခ်ဳိင္႔ဆြဲ စနစ္အေၾကာင္း</h3>
 								<!-- Paragraph -->
-								   <p><span class="red">ခ်ိဳင့္ဆြဲေစ်းႏႈန္းမ်ား</span><br /><br /></p>
-<p>တစ္ေၾကာင္းပို႔ေစ်းႏႈန္း (မနက္စာ၊ ညစာ တစ္ႀကိမ္ပို႔)<br />တစ္ေယာက္စာ (B+) - 135000<br />ႏွစ္ေယာက္စာ (A+) - 193000<br />သံုးေယာက္စာ - 308000</p>
-<p>ႏွစ္ေၾကာင္းပို႔ေစ်းႏႈန္း (မနက္စာ၊ ညစာ ႏွစ္ႀကိမ္ခြဲပို႔)<br />တစ္ေယာက္စာ (B-) - 155000<br />ႏွစ္ေယာက္စာ (A-) - 213000<br />သံုးေယာက္စာ - 328000</p>
-<p>တစ္ေယာက္စာ မနက္စာ (၁)ပိုင္း ၁ လ<br />(B-) - 83500</p>
-<p>ႏွစ္ေယာက္စာ မနက္စာ (၁)ပိုင္း ၁ လ<br />(A-) - 135000</p>
-<p>တစ္ေယာက္စာ (၁၅)ရက္စာ ၁ လ<br />(b+) (၁၅)ရက္ - 73500</p>
-<p>ႏွစ္ေယာက္စာ (၁၅)ရက္စာ ၁ လ<br />(A+) (၁၅)ရက္ - 125000</p>
-<p>(ခ်ိဳင့္ေစ်းႏႈန္းမ်ားသည္ ထမင္းမပါေသာ ေစ်းႏႈန္းမ်ားၿဖစ္ပါသည္။)<br />&nbsp;-&nbsp;&nbsp; &nbsp;ထမင္းပါလွ်င္ တစ္ဦးစာ တစ္လအတြက္ <span class="red">( က်ပ္ ၁ဝဝဝဝ )</span> က်သင့္ပါမည္။<br />&nbsp;-&nbsp;&nbsp; &nbsp;စတင္ယူသည့္ေန႕မွ ေရတြက္ၿပီး ရက္ေပါင္း (၃ဝ) ၿပည့္သည့္ေန႕ကို တစ္လသတ္မွတ္ ပါသည္။<br />&nbsp;-&nbsp;&nbsp; &nbsp;တစ္ပတ္စာ ပို႕ေဆာင္ေပးမည့္ ဟင္းစာရင္းကို ေပးထားမည္ၿဖစ္ၿပီး ၊ မစားသည့္ အသားမ်ားကိုၾကိဳတင္ေၿပာၾကားေပးရပါမည္။<br />&nbsp;-&nbsp;&nbsp; &nbsp;ဆိုင္သို႕ လာေရာက္ယူေဆာင္ပါက<span class="red"> ေငြက်ပ္ ၂ဝဝဝဝ</span> ေလ်ာ့ပါမည္။</p>
+								
+								<div class="panel panel-warning">
+								  <!-- Default panel contents -->
+								 	<div class="panel-heading">တစ္ေၾကာင္းပို႔ေစ်းႏႈန္း (မနက္စာ၊ ညစာ တစ္ႀကိမ္ပို႔)</div>
+									<table class="table table-hover">
 
+										<tbody>
+											<tr>
+												<td>တစ္ေယာက္စာ (B+)</td>
+												<td>135000</td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+											</tr>
+											<tr>
+												<td>ႏွစ္ေယာက္စာ (A+)</td>
+												<td>193000</td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+											</tr>
+											<tr>
+												<td>သံုးေယာက္စာ</td>
+												<td>308000%</td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+								<div class="panel panel-info">
+								  <!-- Default panel contents -->
+								 	<div class="panel-heading">တစ္ေၾကာင္းပို႔ေစ်းႏႈန္း (မနက္စာ၊ ညစာ တစ္ႀကိမ္ပို႔)</div>
+									<table class="table table-hover">
+
+										<tbody>
+											<tr>
+												<td>တစ္ေယာက္စာ (B+)</td>
+												<td>135000</td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+											</tr>
+											<tr>
+												<td>ႏွစ္ေယာက္စာ (A+)</td>
+												<td>193000</td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+											</tr>
+										
+										</tbody>
+									</table>
+								</div>
+								
+								<div class="panel panel-success">
+								  <!-- Default panel contents -->
+								 	<div class="panel-heading">တစ္ေၾကာင္းပို႔ေစ်းႏႈန္း (မနက္စာ၊ ညစာ တစ္ႀကိမ္ပို႔)</div>
+									<table class="table table-hover">
+
+										<tbody>
+											
+											<tr>
+												<td>သံုးေယာက္စာ</td>
+												<td>308000%</td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 								
 							</div>
 							<div class="col-md-5">
