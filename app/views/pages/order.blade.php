@@ -34,31 +34,32 @@
 								</div>
 								<div class="col-md-8 col-sm-7">
 									<!-- Heading -->
-									<h3>Plan Butter Cake</h3>
+									<h3>ထမင္းသုပ္</h3>
 									<div class="row">
 										<div class="col-md-7 col-sm-12">
 											<!-- Single item details -->
 											<div class="item-details">
 												<!-- Paragraph -->
-												<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												<p class="text-justify">ဧည္႔သည္ေတြ က သူတုိ႔ ခ်ဳိင္႔ထဲ ကို ထည္႔တဲ႔ ဟင္းေတြ က အက်န္ေတြ ထည္႔တာလား၊ သန္႔သန္႔ရွင္းရွင္းေကာ ျဖစ္ရဲ႕လား၊ စိတ္ခ် ရရဲ႕လား ဆိုတဲ႔ သူတို႔ စိတ္ထဲက ေမးခ်င္တဲ႔ ေမးခြန္းေတြ အတြက္ေလ႔လာခ်င္တယ္ဆိုရင္ ကၽြန္မတို႔ က မနက္ ခုႏွစ္နာရီခြဲကေန ရွစ္နာရီ ၄၅ မိနစ္ အခ်ိန္တြင္းမွာ လာေလ႔လာဖို႔ အခ်ိန္အျဖစ္သတ္မွတ္ေပးထားပါတယ္။ ၾကည္႔ျပီး အကဲျဖတ္ျပီး စိတ္ၾကိဳက္ျဖစ္ေတာ႔မွ မွာႏိုင္ေအာင္ပါ။
+ဘာေၾကာင္႔လဲ ဆိုေတာ႔ ထမင္းဟင္းခ်က္တယ္ ဆိုတဲ႔ အလုပ္ဟာ စားသံုးသူ ရဲ႕ မ်က္စိေနာက္ကြယ္မွာ လုပ္တာျဖစ္တဲ႔ အတြက္ တစ္ေယာက္နဲ႔ တစ္ေယာက္ သံသယ ရွိႏိုင္တယ္။ စားတဲ႔လူေတြ ပိုျပီး ယံုၾကည္စိတ္ခ်မႈရွိေအာင္ အဲဒီလို ေလ႔လာတဲ႔ အခ်ိန္ဟာ တစ္ျမိဳ႕လံုး အတြက္ ခ်ဳိင္႔ထည္႔တဲ႔ အခ်ိန္မို႔ပါ။ </p>
 												<!-- Heading -->
 												<h5>Ingredients :-</h5>
 												<!-- Recipe ingredients -->
 												<ul class="list-unstyled">
 													<li>
-														<i class="fa fa-check"></i> Cream <span class="pull-right"> 100g</span>
+														<i class="fa fa-check"></i> ေျမပဲဆံ <span class="pull-right"> ၁၀၀ ဂရမ္</span>
 														<div class="clearfix"></div>
 													</li>
 													<li>
-														<i class="fa fa-check"></i> Suger <span class="pull-right"> 250g</span>
+														<i class="fa fa-check"></i> ဆီ <span class="pull-right"> ၂ က်ပ္သား</span>
 														<div class="clearfix"></div>
 													</li>
 													<li>
-														<i class="fa fa-check"></i> Nam libero et <span class="pull-right"> 1/2 cup</span>
+														<i class="fa fa-check"></i> သၾကား <span class="pull-right"> ၁ ဂရမ္</span>
 														<div class="clearfix"></div>
 													</li>
 													<li>
-														<i class="fa fa-check"></i> Lam hured ore <span class="pull-right"> 100ml</span>
+														<i class="fa fa-check"></i> ထမင္း<span class="pull-right"> ၅၀ ဂရမ္</span>
 														<div class="clearfix"></div>
 													</li>
 												</ul>
@@ -107,7 +108,7 @@
 														<tr>
 															<td>&nbsp;</td>
 															<td><div class="form-group">
-																<button type="submit" class="btn btn-danger btn-sm">Payment</button>
+																<button type="submit" class="btn btn-danger btn-sm">အတည္ျပဳသည္</button>
 															</div></td>
 														</tr>
 													</table>
@@ -125,37 +126,7 @@
 			
 				<!-- Showcase Start -->
 				
-				<div class="showcase">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<!-- Showcase section item -->
-								<div class="showcase-item">
-									<!-- Image -->
-									<img class="img-responsive" src="/assets/img/fruit2.png" alt="" />
-									<!-- Heading -->
-									<h3><a href="#">Equine Porno Sumos</a></h3>
-									<!-- Paragraph -->
-									<p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<!-- Showcase section item -->
-								<div class="showcase-item">
-									<!-- Image -->
-									<img class="img-responsive" src="/assets/img/fruit3.png" alt="" />
-									<!-- Heading -->
-									<h3><a href="#">Equine Porno Sumos</a></h3>
-									<!-- Paragraph -->
-									<p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
+				@include('include.showcase');
 				<!-- Showcase End -->
 				
 			</div><!-- / Inner Page Content End -->	

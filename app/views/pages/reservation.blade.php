@@ -28,9 +28,9 @@
 						<div class="row">
 							<div class="col-md-7">
 								<!-- Heading -->
-								<h3>Awesome Decoration</h3>
+								<h3>စားပြဲႀကိဳတင္ယူရန္</h3>
 								<!-- Paragraph -->
-								<p>Loren gypsum dolour sit amet, conjecture listing elite, sed do eiusmod tempor incident ut laboured et magna onjecture listing elite, sed do eiusmod tempo aliqua.</p>
+								<p>ျမန္မာ ထမင္းဟင္း နဲ႔ ပတ္သက္၍ မ်က္ႏွာ မပ်က္ေစရန္ ကူညီပါရေစ။ လူၾကီးမင္း ၏ မြန္ျမတ္ေသာ အလွဴအတန္း ဧည္႔ခံပြဲမ်ား ၌ လိုအပ္ေသာ အပိုင္းအလိုက္ ဧည္ခံေကၽြးေမြး မႈကို တာဝန္ယူ ေဆာင္ရြက္ေပးပါမည္။ ပြဲအစမွ အဆံုး ေကၽြးေမြးဧည္ခံ ျပင္ဆင္သည္႔ အပိုင္းမွ စ၍ သိမ္းဆည္းျပီးဆံုးသည္ အထိ လူၾကီးမင္း စိတ္ပူရန္ မလိုပါ။ ဖုန္းဆက္ဖို႔သာ လိုပါသည္။</p>
 								<!-- Image Slider -->
 								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 									<!-- Wrapper for slides -->
@@ -59,49 +59,52 @@
 								<!-- Booking form area -->
 								<div class="booking-form">
 									<!-- Heading -->
-									<h3>Reservation</h3>
+									<h4>ေဖာင္ျဖည့္ရန္</h4>
 									<!-- Paragraph -->
-									<p>Loren gypsum dolour sit amet, conjecture listing elite, sed do eiusmod tempor incident ut laboured et magna aliqua.</p>
+									<p></p>
 									<!-- Booking form -->
 									<form role="form">
 										<!-- Form label -->
-										<label>Full Name</label>
+										<label>နာမည္</label>
 										<div class="form-group">
 											<!-- Form input -->
-											<input class="form-control" type="text" placeholder="Name" />
+											<input class="form-control" type="text" placeholder="နာမည္ေရးပါ" />
 										</div>
 										<!-- Form label -->
-										<label>Email</label>
+										<label>အီးေမးလ္(Email)</label>
 										<div class="form-group">
 											<!-- Form input -->
-											<input class="form-control" type="email" placeholder="Email" />
+											<input class="form-control" type="email" placeholder="Email ေရးေပးပါ" />
 										</div>
 										<!-- Form label -->
-										<label>Contact</label>
+										<label>ဖုန္းနံပါတ္</label>
 										<div class="form-group">
 											<!-- Form input -->
-											<input class="form-control" type="text" placeholder="Phone number" />
+											<input class="form-control" type="text" placeholder="ဖုန္းနံပါတ္ေရးေပးပါ" />
 										</div>
 										<!-- Form label -->
-										<label>Booking Type</label>
+										<label>လူအေရအတြက္</label>
 										<div class="form-group">
 											<!-- Form drop down -->
 											<select class="form-control">
-												<option>Single</option>
-												<option>Couple</option>
-												<option>Family</option>
-												<option>Business</option>
+												<option>၁ ေယာက္</option>
+												<option>၂ ေယာက္</option>
+												<option>၃ ေယာက္</option>
+												<option>၄ ေယာက္</option>
+												<option>၅ ေယာက္</option>
+												<option>၆ ေယာက္</option>
+												<option>၇ ေယာက္</option>
+												<option>၈ ေယာက္</option>
 											</select>
 										</div>
 										<!-- Form label -->
-										<label>Extra Requirement</label>
+										<label>အပို လိုအပ္ခ်က္မ်ား</label>
 										<div class="form-group">
 											<!-- Form text area -->
-											<textarea class="form-control" rows="3" placeholder="Requirement..."></textarea>
+											<textarea class="form-control" rows="3" placeholder="လိုအပ္ခ်က္မ်ားေရးေပါ"></textarea>
 										</div>
 										<!-- Form button -->
-										<button class="btn btn-danger btn-sm" type="submit">Confirm</button>&nbsp;
-										<button class="btn btn-default btn-sm" type="reset">Reset</button>
+										<button class="btn btn-danger btn-sm" type="submit">အတည္ျပဳသည္</button>&nbsp;
 									</form>
 								</div>
 							</div>
@@ -113,36 +116,7 @@
 			
 				<!-- Showcase Start -->
 				
-				<div class="showcase">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<!-- Showcase section item -->
-								<div class="showcase-item">
-									<!-- Image -->
-									<img class="img-responsive" src="/assets/img/fruit2.png" alt="" />
-									<!-- Heading -->
-									<h3><a href="#">Equine Porno Sumos</a></h3>
-									<!-- Paragraph -->
-									<p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<!-- Showcase section item -->
-								<div class="showcase-item">
-									<!-- Image -->
-									<img class="img-responsive" src="/assets/img/fruit3.png" alt="" />
-									<!-- Heading -->
-									<h3><a href="#">Equine Porno Sumos</a></h3>
-									<!-- Paragraph -->
-									<p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				@include('include.showcase');
 				
 				<!-- Showcase End -->
 				

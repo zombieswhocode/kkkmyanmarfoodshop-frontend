@@ -57,17 +57,18 @@
 						<div class="col-md-3 col-sm-6">
 							<!-- Footer widget -->
 							<div class="footer-widget">
+
 								<!-- Heading -->
 								<h4>ဆက္သြယရန္လိပ္စာ</h4>
 								<div class="contact-details">
 									<!-- Address / Icon -->
-									<i class="fa fa-map-marker br-red"></i> <span>#768, 5th floor, N S Building,<br />Csm Block, Park Road,<br /> Bangalore - 234567</span>
+									<i class="fa fa-map-marker br-red"></i> <span>ဆိုင္ (၁) - ပါရမီ ဆိုင္ခြဲ </span></br>- အမွတ္(၄၂/က) ပါရမီ လမ္း ႏွင္႔ ေဝဇယႏၱာ လမ္းေထာင္႔ ၊ ပါရမီခံုးေက်ာ္ တံတားၾကီး အနီး။ </span>
 									<div class="clearfix"></div>
 									<!-- Contact Number / Icon -->
-									<i class="fa fa-phone br-green"></i> <span>+91 88-88-888888</span>
+									<i class="fa fa-phone br-green"></i> <span>၀၉-၇၃၇၃၆၆၂</span>
 									<div class="clearfix"></div>
 									<!-- Email / Icon -->
-									<i class="fa fa-envelope-o br-lblue"></i> <span><a href="#">abc@example.com</a></span>
+									<i class="fa fa-envelope-o br-lblue"></i> <span><a href="#">kkkmyanmar.com</a></span>
 									<div class="clearfix"></div>
 								</div>
 								<!-- Social media icon -->

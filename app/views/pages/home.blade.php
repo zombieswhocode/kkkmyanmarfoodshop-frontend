@@ -44,7 +44,7 @@
 						<!-- Menu content container -->
 						<div class="menu-container">
 							<div class="row">
-								<div class="col-md-3 col-sm-3">
+								<div class="col-md-4 col-sm-4">
 									<!-- Menu header -->
 									<div class="menu-head">
 										<!-- Image for menu item -->
@@ -55,58 +55,58 @@
 										<div class="title-border br-red"></div>
 									</div>
 									<!-- Menu item details -->
-									<div class="menu-details br-red">
+									<div class="menu-details br-lblue">
 										<!-- Menu list -->
 										<ul class="list-unstyled">
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Fish</a> 
+													<i class="fa fa-angle-right"></i> <a href="#">ငါးသေလာက္ေပါင္း</a> 
 													<!-- Price badge -->
-													<span class="pull-right">$12</span>
+													<span class="pull-right">၂၀ဝဝ က်ပ္	</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Consequent</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ငါးဖယ္</a>
 													<!-- Price badge -->
-													<span class="pull-right">$9</span>
+													<span class="pull-right">၁၇ဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Praising Pain</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ငါးရွဥ္႔ မက်ီးမွည္</a>
 													<!-- Price badge -->
-													<span class="pull-right">$19</span>
+													<span class="pull-right">၂ဝဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Exception Tint</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ငါးေျမြထိုး မက်ီးမွည္႔</a>
 													<!-- Price badge -->
-													<span class="pull-right">$6</span>
+													<span class="pull-right">၂ဝဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Laborious Rhys</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ငါးႏုသန္းအိုးကပ္</a>
 													<!-- Price badge -->
-													<span class="pull-right">$29</span>
+													<span class="pull-right">၂ဝဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 										</ul>
 									</div><!-- / Menu details end -->
 								</div>
-								<div class="col-md-3 col-sm-3">
+								<div class="col-md-4 col-sm-4">
 									<!-- Menu header -->
 									<div class="menu-head">
 										<!-- Image for menu item -->
@@ -117,64 +117,64 @@
 										<div class="title-border br-green"></div>
 									</div>
 									<!-- Menu item details -->
-									<div class="menu-details br-green">
+									<div class="menu-details br-lblue">
 										<!-- Menu list -->
 										<ul class="list-unstyled">
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Fried Chicken</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ၾကက္သားဆီျပန္</a>
 													<!-- Price badge -->
-													<span class="pull-right">$29</span>
+													<span class="pull-right">၂ဝဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Chicken Curie</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ကက္ကာလသား </a>
 													<!-- Price badge -->
-													<span class="pull-right">$49</span>
+													<span class="pull-right">၂၅ဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Praising Pain</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ၾကက္အသဲအျမစ္</a>
 													<!-- Price badge -->
-													<span class="pull-right">$19</span>
+													<span class="pull-right">၂ဝဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Exception Tint</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ၾကက္ေၾကာ္သုပ္</a>
 													<!-- Price badge -->
-													<span class="pull-right">$6</span>
+													<span class="pull-right">၂၅ဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Laborious Rhys</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ၾကက္ဘူးသီး</a>
 													<!-- Price badge -->
-													<span class="pull-right">$29</span>
+													<span class="pull-right">၂၅ဝဝ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 										</ul>
 									</div><!-- / Menu details end -->
 								</div>
-								<div class="col-md-3 col-sm-3">
+								<div class="col-md-4 col-sm-4">
 									<!-- Menu header -->
 									<div class="menu-head">
 										<!-- Image for menu item -->
 										<img class="menu-img img-responsive img-thumbnail" src="/assets/img/menu/menu3.jpg" alt="" />
 										<!-- Menu title / Heading -->
-										<h3>Dessert</h3>
+										<h3>Drink</h3>
 										<!-- Border for above heading -->
 										<div class="title-border br-lblue"></div>
 									</div>
@@ -185,113 +185,52 @@
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Choco Nuts</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ပန္းသီး</a>
 													<!-- Price badge -->
-													<span class="pull-right">$2</span>
+													<span class="pull-right">၁၂၀၀ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Venial Cup</a>
+													<i class="fa fa-angle-right"></i> <a href="#">ငွက္ေပ်ာသီး</a>
 													<!-- Price badge -->
-													<span class="pull-right">$4</span>
+													<span class="pull-right">၁၂၀၀ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Praising Pain</a>
+													<i class="fa fa-angle-right"></i> <a href="#">သရက္သီး</a>
 													<!-- Price badge -->
-													<span class="pull-right">$9</span>
+													<span class="pull-right">၁၄၀၀ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Exception Tint</a>
+													<i class="fa fa-angle-right"></i> <a href="#">လိေမၼာ္သီး</a>
 													<!-- Price badge -->
-													<span class="pull-right">$6</span>
+													<span class="pull-right">၁၅၀၀ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 											<li>
 												<div class="menu-list-item">
 													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Laborious Rhys</a>
+													<i class="fa fa-angle-right"></i> <a href="#">နာနတ္သီး</a>
 													<!-- Price badge -->
-													<span class="pull-right">$5</span>
+													<span class="pull-right">၂၀၀၀ က်ပ္</span>
 													<div class="clearfix"></div>
 												</div>
 											</li>
 										</ul>
 									</div><!-- / Menu details end -->
 								</div>
-								<div class="col-md-3 col-sm-3">
-									<!-- Menu header -->
-									<div class="menu-head">
-										<!-- Image for menu item -->
-										<img class="menu-img img-responsive img-thumbnail" src="/assets/img/menu/menu3.jpg" alt="" />
-										<!-- Menu title / Heading -->
-										<h3>Dessert</h3>
-										<!-- Border for above heading -->
-										<div class="title-border br-lblue"></div>
-									</div>
-									<!-- Menu item details -->
-									<div class="menu-details br-lblue">
-										<!-- Menu list -->
-										<ul class="list-unstyled">
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Choco Nuts</a>
-													<!-- Price badge -->
-													<span class="pull-right">$2</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Venial Cup</a>
-													<!-- Price badge -->
-													<span class="pull-right">$4</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Praising Pain</a>
-													<!-- Price badge -->
-													<span class="pull-right">$9</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Exception Tint</a>
-													<!-- Price badge -->
-													<span class="pull-right">$6</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="#">Laborious Rhys</a>
-													<!-- Price badge -->
-													<span class="pull-right">$5</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-										</ul>
-									</div><!-- / Menu details end -->
-								</div>
+								
 							</div>
 						</div> <!-- /Menu container end -->
 					</div>
