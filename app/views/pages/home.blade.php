@@ -323,10 +323,10 @@
 										<!-- Heading -->
 										<h3><a href="#">ဝက္မက်ီး</a></h3>
 										<!-- Paragraph -->
-										<p>These cases are perfectly simple and distil and when nothing adipose slicing consecrate prevents...</p>
+										<p>အရသာထူးျခားေကာင္းမြန္ေသာ္ ဟင္းလ်ာတစ္မ်ိဳးျဖစ္ပါသည္။ ၀က္သားနွင့္ မက်ီးကို ေရာၿပီးမြေအာင္ ေၾကာ္ခ်က္ထားသည္။</p>
 										<!-- Buy link -->
-										<a class="btn btn-info pull-left" href="#">1500ks</a>
-										<a class="btn btn-warning pull-right" href="#">Order now</a>
+										<a class="btn btn-info pull-left" href="#">၁၅၀၀-က်ပ္</a>
+										<a class="btn btn-warning pull-right" href="#">မွာယူမည္</a>
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
@@ -343,10 +343,10 @@
 										<!-- Heading -->
 										<h3><a href="#">ဝက္ၾကံမဆိုင္</a></h3>
 										<!-- Paragraph -->
-										<p>These cases are perfectly simple and distil and when nothing adipose slicing consecrate prevents...</p>
+										<p>ခ်ဥ္ေပါင္ရြက္ကို ၾကာရွည္ခံေၾကာ္ခ်က္ထားျခင္းျဖစ္ပါသည္။ ငရုပ္သီးနွင့္ ထည့္ထားေသာ္လည္း စားေကာင္းရံုသာစပ္ပါမည္။</p>
 										<!-- Buy link -->
-										<a class="btn btn-info pull-left" href="#">1500ks</a>
-										<a class="btn btn-warning pull-right" href="#">Order now</a>
+										<a class="btn btn-info pull-left" href="#">၁၂၀၀-က်ပ္</a>
+										<a class="btn btn-warning pull-right" href="#">မွာယူမည္</a>
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
@@ -365,10 +365,10 @@
 										<!-- Heading -->
 										<h3><a href="#">ခ်ဥ္ေပါင္ေၾကာ္</a></h3>
 										<!-- Paragraph -->
-										<p>These cases are perfectly simple and distil and when nothing adipose slicing consecrate prevents...</p>
+										<p>အေကာင္းဆံုးဟင္းလ်ာတစ္ခုအျဖစ္ အၾကံျပဳခ်င္ပါသည္။</p>
 										<!-- Buy link -->
-										<a class="btn btn-info pull-left" href="#">1500ks</a>
-										<a class="btn btn-warning pull-right" href="#">Order now</a>
+										<a class="btn btn-info pull-left" href="#">၁၀၀၀-က်ပ္</a>
+										<a class="btn btn-warning pull-right" href="#">မွာယူမည္</a>
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
@@ -385,10 +385,10 @@
 										<!-- Heading -->
 										<h3><a href="#">ဝက္သားဆီျပန္</a></h3>
 										<!-- Paragraph -->
-										<p>These cases are perfectly simple and distil and when nothing adipose slicing consecrate prevents...</p>
+										<p>အဆီအရမ္းမမ်ားေသာက္ ဟင္းလ်တစ္ခုျဖစ္သည္။ ဆီျပန္ခ်က္ထားသျဖင့္ ၾကာရွည္အစားခံမည္။</p>
 										<!-- Buy link -->
-										<a class="btn btn-info pull-left" href="#">1500ks</a>
-										<a class="btn btn-warning pull-right" href="#">Order now</a>
+										<a class="btn btn-info pull-left" href="#">၂၀၀၀-က်ပ္</a>
+										<a class="btn btn-warning pull-right" href="#">မွာယူမည္</a>
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
@@ -408,8 +408,7 @@
 								<li><a href="#">5</a></li>
 								<li><a href="#">6</a></li>
 								<li><a href="#">7</a></li>
-								<li><a href="#">8</a></li>
-								<li><a href="#">9</a></li>
+
 								<li><a href="#">&raquo;</a></li>
 							</ul>
 						</div>

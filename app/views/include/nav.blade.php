@@ -12,9 +12,9 @@
 								<div class="logo">
 									<img class="img-responsive" src="/assets/img/logo.png" alt="" />
 									<!-- Heading -->
-									<h1>Khaing Khaing Kyaw</h1>
+									<h1>ခိုင္ခိုင္ေက်ာ္</h1>
 									<!-- Paragraph -->
-									<p>Food Shop.</p>
+									<p>Myanmar Food Shop.</p>
 								</div>
 							</a>
 						</div>

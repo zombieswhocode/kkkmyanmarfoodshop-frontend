@@ -40,8 +40,7 @@
 											<textarea class="form-control" rows="3" placeholder="လိပ္စာျဖည့္သြင္းါ"></textarea>
 										</div>
 										<!-- Form button -->
-										<button class="btn btn-danger btn-sm" type="submit">Confirm</button>&nbsp;
-										<button class="btn btn-default btn-sm" type="reset">Reset</button>
+										<button class="btn btn-danger btn-sm" type="submit">အတည္ျပဳသည္</button>
 									</form>
 								</div>
 					</div>
@@ -77,7 +76,7 @@
 						<div class="row">
 							<div class="col-md-7">
 								<!-- Heading -->
-								<h3>ခ်ဳိင္႔ဆြဲ စနစ္အေၾကာင္း</h3>
+								<h4></h4>
 								<!-- Paragraph -->
 								
 								<div class="panel panel-warning">
@@ -89,17 +88,17 @@
 											<tr>
 												<td>တစ္ေယာက္စာ (B+)</td>
 												<td>135000</td>
-												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">မွာယူမည္</a></td>
 											</tr>
 											<tr>
 												<td>ႏွစ္ေယာက္စာ (A+)</td>
 												<td>193000</td>
-												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">မွာယူမည္</a></td>
 											</tr>
 											<tr>
 												<td>သံုးေယာက္စာ</td>
 												<td>308000%</td>
-												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">မွာယူမည္</a></td>
 											</tr>
 										</tbody>
 									</table>
@@ -114,12 +113,12 @@
 											<tr>
 												<td>တစ္ေယာက္စာ (B+)</td>
 												<td>135000</td>
-												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">မွာယူမည္</a></td>
 											</tr>
 											<tr>
 												<td>ႏွစ္ေယာက္စာ (A+)</td>
 												<td>193000</td>
-												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">မွာယူမည္</a></td>
 											</tr>
 										
 										</tbody>
@@ -136,7 +135,7 @@
 											<tr>
 												<td>သံုးေယာက္စာ</td>
 												<td>308000%</td>
-												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">Order now</a></td>
+												<td><a data-toggle="modal" href="#orderForm" class="btn btn-warning pull-right" href="#">မွာယူမည္</a></td>
 											</tr>
 										</tbody>
 									</table>
@@ -147,50 +146,13 @@
 								<!-- Booking form area -->
 								<div class="booking-form">
 									<!-- Heading -->
-									<h3>Reservation</h3>
+									<h4><b>ခ်ဳိင္႔ဆြဲ စနစ္အေၾကာင္း</b></h4>
+									<hr>
 									<!-- Paragraph -->
-									<p>Loren gypsum dolour sit amet, conjecture listing elite, sed do eiusmod tempor incident ut laboured et magna aliqua.</p>
+									<p><span class="red">အသားဟင္း ပါဝင္သည့္ပံုစံ</span><br />&nbsp;&nbsp; &nbsp;A ခ်ိဳင့္အမ်ိဳးအစားတြင္ မနက္စာအတြက္ အသားဟင္း (၄)တံုး ၊ ညေနစာအတြက္ အသားဟင္း (၄)တံုး ၊ အသီးအရြက္ေၾကာ္ (သို႕)အသုတ္၊ အရည္ေသာက္၊ ငါးပိတို႕စရာ တို႕ပါဝင္ပါမည္။<br /><br />&nbsp;&nbsp; &nbsp;B ခ်ိဳင့္အမ်ိဳးအစားတြက္ မနက္စာအတြက္ အသားဟင္း (၂)တံုး ၊ ညေနစာအတြက္ အသားဟင္း (၂)တံုး ၊ အသီးအရြက္ေၾကာ္ (သို႕)အသုတ္၊အရည္ေသာက္၊ ငါးပိတို႕စရာ တို႕ပါဝင္ ပါမည္။<br /><br />&nbsp;&nbsp; &nbsp;A ခ်ိဳင့္ႏွင့္ B ခ်ိဳင့္မွာ အသားဟင္း အေရအတြက္ သာကြာၿခားၿပီး အသီးအရြက္ေၾကာ္ (သို႕) အသုတ္၊ အရည္ေသာက္၊ ငါးပိတို႕စရာ တို႕မွာ အတူတူၿဖစ္ပါသည္။</p>
+
 									<!-- Booking form -->
-									<form role="form">
-										<!-- Form label -->
-										<label>Full Name</label>
-										<div class="form-group">
-											<!-- Form input -->
-											<input class="form-control" type="text" placeholder="Name" />
-										</div>
-										<!-- Form label -->
-										<label>Email</label>
-										<div class="form-group">
-											<!-- Form input -->
-											<input class="form-control" type="email" placeholder="Email" />
-										</div>
-										<!-- Form label -->
-										<label>Contact</label>
-										<div class="form-group">
-											<!-- Form input -->
-											<input class="form-control" type="text" placeholder="Phone number" />
-										</div>
-										<!-- Form label -->
-										<label>Booking Type</label>
-										<div class="form-group">
-											<!-- Form drop down -->
-											<select class="form-control">
-												<option>Single</option>
-												<option>Couple</option>
-												<option>Family</option>
-												<option>Business</option>
-											</select>
-										</div>
-										<!-- Form label -->
-										<label>Extra Requirement</label>
-										<div class="form-group">
-											<!-- Form text area -->
-											<textarea class="form-control" rows="3" placeholder="Requirement..."></textarea>
-										</div>
-										<!-- Form button -->
-										<button class="btn btn-danger btn-sm" type="submit">Confirm</button>&nbsp;
-										<button class="btn btn-default btn-sm" type="reset">Reset</button>
-									</form>
+									
 								</div>
 							</div>
 						</div>
