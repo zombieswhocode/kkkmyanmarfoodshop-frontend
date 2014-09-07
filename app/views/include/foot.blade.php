@@ -10,7 +10,7 @@
 								<div class="logo">
 									<img class="img-responsive" src="/assets/img/logo.png" alt="" />
 									<!-- Heading -->
-									<h1>ခိုင္ခိုင္ေက်ာ္</h1>
+									<h1 style="color:green;">ခိုင္ခိုင္ေက်ာ္</h1>
 								</div>
 								<hr>
 								<!-- Paragraph -->
